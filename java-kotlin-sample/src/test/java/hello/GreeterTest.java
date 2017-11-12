@@ -8,10 +8,16 @@ import org.junit.Test;
 public class GreeterTest {
 
 	private Greeter greeter = new Greeter();
+	private GreeterK greeterk = new GreeterK();
 
 	@Test
 	public void greeterSaysHello() {
 		assertThat(greeter.sayHello(), containsString("Hello"));
+	}
+	
+	@Test
+	public void greeterSaysHelloKotlin() {
+		assertThat(greeterk.sayHello(), containsString("KOTLIN"));
 	}
 
 }
